@@ -18,15 +18,15 @@
     <div class="weather-app-box">
       <div class="weather-app"></div>
       <header>
-        <form class="search-form">
-          <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+        <form class="search-form" id="search-form">
+          <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input" />
           <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div class="weather-app-data"></div>
+        <div class="weather-app-data">
         <div>
-          <h1 class="weather-app-city">Pretoria</h1>
+          <h1 class="weather-app-city" id="city">Pretoria</h1>
           <p class="weather-app-details">
             Sunday 11:14, partly cloudy
             <br />
@@ -37,11 +37,12 @@
           <div class="weather-app-icon">🌥</div>  
           <div class="weather-app-temperature">18</div>
           <div class="weather-app-unit">°C</div>
-        
+        </div>
       </main>
       <footer>This project was coded by <a href="https://github.com/Hlogi-02/" target="_blank"> Mahlogonolo Legodi,</a> is <a href="https://github.com/Hlogi-02/vanilla-weather-app" target="_blank">open-sourced on Github</a>
         and <a href="https://phenomenal-hamster-9ea2db.netlify.app/" target="_blank">hosted on Nettlify</a>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
